@@ -8,8 +8,8 @@ function minimumBribes(q) {
   let count = 0;
   let totalCount = 0;
   let ans = '';
-  for (let i = 0; i < q.length; i++) {
-    for (let j = 0; j < q.length; j++) {
+  for (let i = 0, lens = q.length; i < lens; i++) {
+    for (let j = 0, lens = q.length; j < lens; j++) {
       console.log('i' + i, 'j' + j);
       if (q[j] - j > 3) {
         ans = 'Too chaotic';
